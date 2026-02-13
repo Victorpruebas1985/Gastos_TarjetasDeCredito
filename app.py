@@ -15,7 +15,12 @@ DB_NAME = "mis_finanzas.db"
 # --------------------------------------------------------------------------
 # TU CLAVE DE API
 # --------------------------------------------------------------------------
-API_KEY = "AIzaSyDTmiXEXztkWLoAxJUd4YM3TUCR1ybm-dk"
+# Intenta leer de los secretos de Streamlit, si no, usa una vacía (para evitar errores locales si no configuras secrets.toml)
+try:
+    API_KEY = st.secrets["GOOGLE_API_KEY"]
+except:
+    # Opción de respaldo solo para pruebas locales rápidas (no recomendado en producción)
+    API_KEY = "AIzaSyDTmiXEXztkWLoAxJUd4YM3TUCR1ybm-dk"
 
 # Configurar Gemini
 try:
