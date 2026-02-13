@@ -13,14 +13,9 @@ st.set_page_config(page_title="Control de Gastos", layout="wide")
 DB_NAME = "mis_finanzas.db"
 
 # --------------------------------------------------------------------------
-# TU CLAVE DE API
+# TU CLAVE DE API (AHORA SEGURA)
 # --------------------------------------------------------------------------
-# Intenta leer de los secretos de Streamlit, si no, usa una vacía (para evitar errores locales si no configuras secrets.toml)
-try:
-    API_KEY = st.secrets["GOOGLE_API_KEY"]
-except:
-    # Opción de respaldo solo para pruebas locales rápidas (no recomendado en producción)
-    API_KEY = "AIzaSyDTmiXEXztkWLoAxJUd4YM3TUCR1ybm-dk"
+API_KEY = st.secrets["GOOGLE_API_KEY"]
 
 # Configurar Gemini
 try:

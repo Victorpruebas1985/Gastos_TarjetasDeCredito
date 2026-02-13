@@ -1,0 +1,2 @@
+.streamlit/
+mis_finanzas.db
