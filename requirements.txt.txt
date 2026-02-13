@@ -1,0 +1,7 @@
+streamlit
+pandas
+google-generativeai
+altair
+openpyxl
+Pillow
+python-dateutil
